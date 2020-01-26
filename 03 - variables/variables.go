@@ -1,34 +1,45 @@
-// In Go, _variables_ are explicitly declared and used by
-// the compiler to e.g. check type-correctness of function
-// calls.
+// Em Go, _variables_ são explicitamente declaradas e usadas pelo
+// compilador para, por exemplo, verificar se a chamada a uma função
+// está correta.
 
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "reflect"
+)
 
 func main() {
 
-    // `var` declares 1 or more variables.
-    var a = "initial"
+    // `var` declara 1 ou mais variáveis.
+    var a = "uma string qualquer"
     fmt.Println(a)
 
-    // You can declare multiple variables at once.
+    // Você pode declarar várias variáveis ao mesmo tempo.
     var b, c int = 1, 2
-    fmt.Println(b, c)
+    fmt.Println(b, c) //Imprime na mesma linha o 1 e o 2
 
-    // Go will infer the type of initialized variables.
+    // Go deduzirá os tipos de variáveis inicializadas.
     var d = true
     fmt.Println(d)
 
-    // Variables declared without a corresponding
-    // initialization are _zero-valued_. For example, the
-    // zero value for an `int` is `0`.
+    // Variáveis numéricas declaradas sem uma inicialização
+    // ela terá valor zero. Por exemplo, na
+    // declaração abaixo e ficará com o valor zero
     var e int
     fmt.Println(e)
 
-    // The `:=` syntax is shorthand for declaring and
-    // initializing a variable, e.g. for
-    // `var f string = "apple"` in this case.
-    f := "apple"
+    // A sintaxe `:=` é uma abreviação para declarar e
+    // inicializar uma variável.
+    var num01 int = 10
+    //O := é para declaração e atribuição de uma só vez
+    // O = é só atribuição
+    num02 := 5.75
+    f := "banana"
     fmt.Println(f)
-}
+    fmt.Println(reflect.TypeOf(f))
+    fmt.Println(num02)
+    fmt.Println(reflect.TypeOf(num02))
+    fmt.Println(num01)
+    fmt.Println(reflect.TypeOf(num01))
+}  
