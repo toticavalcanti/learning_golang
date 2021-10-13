@@ -9,7 +9,7 @@ import "time"
 func main() {
 
     // Here's a basic `switch`.
-    i := 2
+    i := 3
     fmt.Print("Write ", i, " as ")
     switch i {
     case 1:
