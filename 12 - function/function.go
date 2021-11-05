@@ -2,31 +2,20 @@ package main
 
 import "fmt"
 
+func plus(a int, b int) int {
+
+    return a + b
+}
+
+func plusPlus(a, b, c int) int {
+    return a + b + c
+}
+
 func main() {
 
-    nums := []int{2, 3, 4}
-    sum := 0
-    for _, num := range nums {
-        sum += num
-    }
-    fmt.Println("sum:", sum)
+    res := plus(1, 2)
+    fmt.Println("1+2 =", res)
 
-    for i, num := range nums {
-        if num == 3 {
-            fmt.Println("index:", i)
-        }
-    }
-
-    kvs := map[string]string{"a": "apple", "b": "banana"}
-    for k, v := range kvs {
-        fmt.Printf("%s -> %s\n", k, v)
-    }
-
-    for k := range kvs {
-        fmt.Println("key:", k)
-    }
-
-    for i, c := range "golang" {
-        fmt.Println(i, c)
-    }
+    res = plusPlus(1, 2, 3)
+    fmt.Println("1+2+3 =", res)
 }
