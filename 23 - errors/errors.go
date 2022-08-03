@@ -50,8 +50,9 @@ func main() {
 		// No errors!
 		fmt.Println(answer)
 	}
-	answer, err = divide_using_builtin(5, 0)
-	if myerr != nil {
+
+	answer, err = divide_using_custom(5, 0)
+	if err != nil {
 		// Handle the error with custom error!
 		fmt.Println(myerr)
 	} else {
