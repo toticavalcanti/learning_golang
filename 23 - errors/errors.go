@@ -10,13 +10,23 @@ import (
 type DivZero struct{}
 
 func (myerr *DivZero) Error() string {
-	return "Cannot divide by 0! (struct)"
+	return "Cannot divide by 0! (Using Custom Errors)"
 }
 
-//custom error --> New
-func divide(x int, y int) (int, error) {
+var myerr = &DivZero{}
+
+// using builtin "errors" --> Using Builtin Errors
+func divide_using_builtin(x int, y int) (int, error) {
 	if y == 0 {
-		return -1, errors.New("Cannot divide by 0! (New)")
+		return -1, errors.New("Cannot divide by 0! (Using Builtin Errors)")
+	}
+	return x / y, nil
+}
+
+// using custom DivZero "errors" --> Using Custom Errors
+func divide_using_custom(x int, y int) (int, error) {
+	if y == 0 {
+		return -1, myerr
 	}
 	return x / y, nil
 }
@@ -32,7 +42,7 @@ func main() {
 
 	fmt.Println("filename", filename) //comes out as
 
-	answer, err := divide(5, 0)
+	answer, err := divide_using_builtin(5, 0)
 	if err != nil {
 		// Handle the error!
 		fmt.Println(err)
@@ -40,8 +50,7 @@ func main() {
 		// No errors!
 		fmt.Println(answer)
 	}
-
-	myerr := &DivZero{}
+	answer, err = divide_using_builtin(5, 0)
 	if myerr != nil {
 		// Handle the error with custom error!
 		fmt.Println(myerr)
