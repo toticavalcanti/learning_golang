@@ -65,7 +65,7 @@ import (
 )
 
 func CalculateValue(c chan int) {
-	fmt.Println(time.Now().UnixNano())
+	fmt.Println()
 	rand.Seed(time.Now().UnixNano())
 	value := rand.Intn(10)
 	fmt.Println("Calculated Random Value: {}", value)
