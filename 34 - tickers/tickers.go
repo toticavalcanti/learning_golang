@@ -81,7 +81,7 @@
 // }
 
 // func main() {
-// 	ticker := time.NewTicker(1000 * time.Second)
+// 	ticker := time.NewTicker(30 * time.Second)
 
 // 	go func() {
 // 		for range ticker.C {
