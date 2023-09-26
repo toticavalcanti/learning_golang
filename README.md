@@ -52,7 +52,7 @@ Este tutorial é distribuído sob a Licença MIT. Consulte o arquivo [LICENSE](L
 
 ## Autor
 
-[Seu Nome]
+Toti Cavalcanti
 
 ## Agradecimentos
 
