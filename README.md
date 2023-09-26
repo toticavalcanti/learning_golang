@@ -1,6 +1,6 @@
 # Tutorial de Golang
 
-Este repositório contém um tutorial completo para aprender a linguagem de programação Go (Golang) do zero. Este tutorial foi criado para iniciantes e programadores experientes que desejam aprender Go ou aprimorar suas habilidades na linguagem.
+Este repositório contém um tutorial completo para aprender a linguagem de programação GO(Golang) do zero. Este tutorial foi criado para iniciantes e programadores experientes que desejam aprender Go ou aprimorar suas habilidades na linguagem.
 
 ## Pr&eacute;-requisitos
 Ter Golang instalado
