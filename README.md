@@ -7,7 +7,7 @@ Ter Golang instalado
 
 ## Conteúdo
 
-O tutorial está organizado em várias seções, cada uma cobrindo um tópico específico em Golang. Aqui está uma visão geral do que você encontrará neste tutorial:
+O tutorial está organizado em várias seções, cada uma cobrindo um tópico específico em Golang. <br><br>Aqui está uma visão geral do que você encontrará neste tutorial:
 
 1. **Introdução a Golang**
    - Uma introdução à linguagem Go e suas principais características.
