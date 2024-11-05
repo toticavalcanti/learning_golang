@@ -13,7 +13,7 @@ func processarArquivo(nomeArquivo string) error {
 	}
 	// Garante que o arquivo será fechado ao final da função
 	defer func() {
-		fmt.Println("Fechando arquivo...")
+		fmt.Println("\n\nFechando arquivo...")
 		arquivo.Close()
 	}()
 
